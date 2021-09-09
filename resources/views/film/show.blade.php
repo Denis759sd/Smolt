@@ -34,11 +34,13 @@
     <!--grids-sec1-->
     <section class="w3l-grids">
         <div class="grids-main py-5">
-            <div id="player" style="width:700px;height:281px; margin-left: 25rem"></div>
+            <div class="container py-lg-3">
+                <div id="player" style="width:700px;height:281px;"></div>
 
-            <script>
-                var player = new Playerjs({id:"player", file:"{{$film->video_cdn}}"});
-            </script>
+                <script>
+                    var player = new Playerjs({id:"player", file:"{{$film->video_cdn}}"});
+                </script>
+            </div>
         </div>
     </section>
     <!--//grids-sec1-->

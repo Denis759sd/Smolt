@@ -81,156 +81,36 @@
                             <h3 class="hny-title">New Releases</h3>
                         </div>
                         <div class="headerhny-right text-lg-right">
-                            <h4><a class="show-title" href="genre.html">Show all</a></h4>
+                            <h4><a class="show-title" href="{{route('genre')}}">Show all</a></h4>
                         </div>
                     </div>
                 </div>
                 <div class="owl-three owl-carousel owl-theme">
-                    <div class="item vhny-grid">
-                        <div class="box16">
-                            <a href="genre.html">
-                                <figure>
-                                    <img class="img-fluid" src="/assets/images/m12.jpg" alt="">
-                                </figure>
-                                <div class="box-content">
-                                    <h4> <span class="post"><span class="fa fa-clock-o"> </span> 2 Hr 4min
+                    @foreach($films as $film)
+                        <div class="item vhny-grid">
+                            <div class="box16">
+                                <a href="{{route('showFilm', [$film->id])}}">
+                                    <figure>
+                                        <img class="img-fluid" src="{{$film->image}}" alt="">
+                                    </figure>
+                                    <div class="box-content">
+                                        <h4> <span class="post"><span class="fa fa-clock-o"> </span> {{$film->duration}}
 
-											</span>
+                                                </span>
 
-                                        <span class="post fa fa-heart text-right"></span>
-                                    </h4>
-                                </div>
-                                <span class="fa fa-play video-icon" aria-hidden="true"></span>
-                            </a>
+                                            <span class="post fa fa-heart text-right"></span>
+                                        </h4>
+                                    </div>
+                                    <span class="fa fa-play video-icon" aria-hidden="true"></span>
+                                </a>
+                            </div>
+                            <h3> <a class="title-gd" href="genre.html">{{$film->title}}</a></h3>
+                            <p>{{$film->description}}</p>
+                            <div class="button-center text-center mt-4">
+                                <a href="{{route('showFilm', [$film->id])}}" class="btn watch-button">Watch now</a>
+                            </div>
                         </div>
-                        <h3> <a class="title-gd" href="genre.html">The Hustle</a></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                        <div class="button-center text-center mt-4">
-                            <a href="genre.html" class="btn watch-button">Watch now</a>
-                        </div>
-
-                    </div>
-                    <div class="item vhny-grid">
-                        <div class="box16">
-                            <a href="genre.html">
-                                <figure>
-                                    <img class="img-fluid" src="/assets/images/m11.jpg" alt="">
-                                </figure>
-                                <div class="box-content">
-
-                                    <h4> <span class="post"><span class="fa fa-clock-o"> </span> 2 Hr 4min
-
-											</span>
-
-                                        <span class="post fa fa-heart text-right"></span>
-                                    </h4>
-                                </div>
-                                <span class="fa fa-play video-icon" aria-hidden="true"></span>
-                            </a>
-                        </div>
-                        <h3> <a class="title-gd" href="genre.html">The Lego</a></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                        <div class="button-center text-center mt-4">
-                            <a href="genre.html" class="btn watch-button">Watch now</a>
-                        </div>
-                    </div>
-                    <div class="item vhny-grid">
-                        <div class="box16">
-                            <a href="genre.html">
-                                <figure>
-                                    <img class="img-fluid" src="/assets/images/m9.jpg" alt="">
-                                </figure>
-                                <div class="box-content">
-
-                                    <h4> <span class="post"><span class="fa fa-clock-o"> </span> 2 Hr 4min
-
-											</span>
-
-                                        <span class="post fa fa-heart text-right"></span>
-                                    </h4>
-                                </div>
-                                <span class="fa fa-play video-icon" aria-hidden="true"></span>
-                            </a>
-                        </div>
-                        <h3> <a class="title-gd" href="genre.html">Joker </a></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                        <div class="button-center text-center mt-4">
-                            <a href="genre.html" class="btn watch-button">Watch now</a>
-                        </div>
-                    </div>
-                    <div class="item vhny-grid">
-                        <div class="box16">
-                            <a href="genre.html">
-                                <figure>
-                                    <img class="img-fluid" src="/assets/images/m8.jpg" alt="">
-                                </figure>
-                                <div class="box-content">
-
-                                    <h4> <span class="post"><span class="fa fa-clock-o"> </span> 2 Hr 4min
-
-											</span>
-
-                                        <span class="post fa fa-heart text-right"></span>
-                                    </h4>
-                                </div>
-                                <span class="fa fa-play video-icon" aria-hidden="true"></span>
-                            </a>
-                        </div>
-                        <h3> <a class="title-gd" href="genre.html">Toy story 4</a></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                        <div class="button-center text-center mt-4">
-                            <a href="genre.html" class="btn watch-button">Watch now</a>
-                        </div>
-
-                    </div>
-                    <div class="item vhny-grid">
-                        <div class="box16">
-                            <a href="genre.html">
-                                <figure>
-                                    <img class="img-fluid" src="/assets/images/m1.jpg" alt="">
-                                </figure>
-                                <div class="box-content">
-
-                                    <h4> <span class="post"><span class="fa fa-clock-o"> </span> 2 Hr 4min
-
-											</span>
-
-                                        <span class="post fa fa-heart text-right"></span>
-                                    </h4>
-                                </div>
-                                <span class="fa fa-play video-icon" aria-hidden="true"></span>
-                            </a>
-                        </div>
-                        <h3> <a class="title-gd" href="genre.html">Rocketman</a></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                        <div class="button-center text-center mt-4">
-                            <a href="genre.html" class="btn watch-button">Watch now</a>
-                        </div>
-                    </div>
-                    <div class="item vhny-grid">
-                        <div class="box16">
-                            <a href="genre.html">
-                                <figure>
-                                    <img class="img-fluid" src="/assets/images/m2.jpg" alt="">
-                                </figure>
-                                <div class="box-content">
-
-                                    <h4> <span class="post"><span class="fa fa-clock-o"> </span> 2 Hr 4min
-
-											</span>
-
-                                        <span class="post fa fa-heart text-right"></span>
-                                    </h4>
-                                </div>
-                                <span class="fa fa-play video-icon" aria-hidden="true"></span>
-                            </a>
-                        </div>
-                        <h3> <a class="title-gd" href="genre.html">Doctor Sleep</a></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                        <div class="button-center text-center mt-4">
-                            <a href="genre.html" class="btn watch-button">Watch now</a>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
 

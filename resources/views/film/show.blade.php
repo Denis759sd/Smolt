@@ -1,4 +1,4 @@
-@extends('layout.main')
+@extends('layouts.main')
 
 @section('custom_js')
     <script src="/assets/player/playerjs.js" type="text/javascript"></script>

@@ -20,3 +20,11 @@ Route::get('/about', 'App\Http\Controllers\AboutController@index')->name('about'
 Route::get('/genre', 'App\Http\Controllers\GenreController@index')->name('genre');
 
 Route::get('/film/{id}', 'App\Http\Controllers\FilmController@show')->name('showFilm');
+
+Auth::routes();
+
+Route::middleware(['role:admin', 'auth'])->prefix('admin_panel')->group(function () {
+    Route::get('/', [\App\Http\Controllers\Admin\HomeController::class, 'index'])->name('homeAdmin');
+
+    Route::resource('film', \App\Http\Controllers\Admin\FilmController::class);
+});

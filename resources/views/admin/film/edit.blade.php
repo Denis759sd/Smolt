@@ -39,7 +39,7 @@
                                         </div>
 
                                         <div class="form-group">
-                                            <textarea value="{{$film->description}}" name="description" class="editor"></textarea>
+                                            <textarea name="description" class="editor">{{$film->description}}</textarea>
                                         </div>
 
                                         <div class="form-group">

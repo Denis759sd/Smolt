@@ -92,7 +92,7 @@ class FilmController extends Controller
         $film->video_cdn = $request->video_cdn;
         $film->image = $request->image;
 
-        Film::update($film);
+        $film->save();
 
         return  redirect()->back()->withSuccess("Film successfully update");
     }

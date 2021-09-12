@@ -41,7 +41,7 @@
     <section class="w3l-grids">
         <div class="grids-main py-5">
             <div class="container py-lg-3">
-                <iframe src="https:{{$film->video_cdn}}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                <iframe class="player" src="https:{{$film->video_cdn}}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
     </section>

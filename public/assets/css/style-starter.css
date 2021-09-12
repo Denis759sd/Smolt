@@ -14822,6 +14822,13 @@ header.nav-fixed {
   }
 }
 
+@media (max-width:600px) {
+  .player {
+    width: 480px;
+    height: 240px;
+  }
+}
+
 /*--main-slider--*/
 .w3l-main-slider {
   padding-top: 70px;

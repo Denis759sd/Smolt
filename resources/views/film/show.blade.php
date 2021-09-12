@@ -29,8 +29,8 @@
                     </div>
 
                     <div>
-                        <h2 class="title" style="color: #fff; ">{{$film->title}}</h2>
-                        <h4 class="description" style="margin-top: 8rem;">{{$film->description}}</h4>
+                        <h2 class="title" style="color: #fff; margin-bottom: 2rem">{{$film->title}}</h2>
+                        <h4 class="description">{{$film->description}}</h4>
                     </div>
                 </div>
             </div>

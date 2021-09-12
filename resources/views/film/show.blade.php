@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('custom_js')
-    <script src="/assets/player/playerjs.js" type="text/javascript"></script>
+    <script src="https://playerjs.com/builder/player=9nsff68gjhaj" type="text/javascript"></script>
 @endsection
 
 @section('content')
@@ -35,11 +35,7 @@
     <section class="w3l-grids">
         <div class="grids-main py-5">
             <div class="container py-lg-3">
-                <div id="player" style="width:700px;height:281px;"></div>
-
-                <script>
-                    var player = new Playerjs({id:"player", file:"{{$film->video_cdn}}"});
-                </script>
+                <iframe src="https:{{$film->video_cdn}}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
     </section>

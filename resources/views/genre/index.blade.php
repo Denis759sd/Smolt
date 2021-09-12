@@ -23,15 +23,28 @@
                         <div class="headerhny-left">
                             <h3 class="hny-title">Latest Movies</h3>
                         </div>
-                        <div class="headerhny-right text-lg-right">
-                            <h4><a class="show-title" href="genre.html">Show all</a></h4>
-                        </div>
                     </div>
                 </div>
                 <div class="w3l-populohny-grids">
+                    @foreach($films as $film)
+                        <div class="item vhny-grid">
+                            <div class="box16">
+                                <a href="{{route('showFilm', [$film->id])}}">
+                                    <figure>
+                                        <img class="img-fluid" src="{{$film->image}}" alt="">
+                                    </figure>
+                                    <div class="box-content">
+                                        <h3 class="title">{{$film->title}}</h3>
+                                        <h4> <span class="post"><span class="fa fa-clock-o"> </span> {{$film->duration}}
 
-
-
+                                            </span>
+                                        </h4>
+                                    </div>
+                                    <span class="fa fa-play video-icon" aria-hidden="true"></span>
+                                </a>
+                            </div>
+                        </div>
+                    @endforeach
                 </div>
             </div>
 

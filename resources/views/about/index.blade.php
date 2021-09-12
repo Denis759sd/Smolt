@@ -34,7 +34,7 @@
                 <div class="stats_left">
                     <div class="counter_grid">
                         <div class="icon_info">
-                            <p class="counter">65</p>
+                            <p class="counter">{{$films_count}}</p>
                             <h4>Movies</h4>
 
                         </div>
@@ -52,7 +52,7 @@
                 <div class="stats_left">
                     <div class="counter_grid">
                         <div class="icon_info">
-                            <p class="counter">463</p>
+                            <p class="counter">{{$users_count}}</p>
                             <h4>Members</h4>
 
                         </div>
@@ -61,8 +61,8 @@
                 <div class="stats_left">
                     <div class="counter_grid">
                         <div class="icon_info">
-                            <p class="counter">5063</p>
-                            <h4>Year of Use</h4>
+                            <p class="counter">1</p>
+                            <h4>Month of Use</h4>
 
                         </div>
                     </div>

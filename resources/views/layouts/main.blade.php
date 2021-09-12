@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Kino Site</title>
+    <title>Smolt - @yield('title')</title>
     <!-- Template CSS -->
     <link rel="stylesheet" href="/assets/css/style-starter.css">
     <!-- Template CSS -->

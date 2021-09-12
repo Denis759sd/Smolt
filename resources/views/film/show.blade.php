@@ -1,5 +1,7 @@
 @extends('layouts.main')
 
+@section('title', $film->title)
+
 @section('custom_js')
     <script src="https://playerjs.com/builder/player=9nsff68gjhaj" type="text/javascript"></script>
 @endsection

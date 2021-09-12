@@ -1,5 +1,7 @@
 @extends('layouts.main')
 
+@section('title', 'Genre')
+
 @section('content')
     <!--/breadcrumbs -->
     <div class="w3l-breadcrumbs">

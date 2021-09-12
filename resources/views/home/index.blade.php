@@ -1,5 +1,7 @@
 @extends('layouts.main')
 
+@section('title', 'Home')
+
 @section('content')
     <!-- main-slider -->
     <section class="w3l-main-slider position-relative" id="home">

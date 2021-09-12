@@ -8,6 +8,8 @@
     <title>Smolt - @yield('title')</title>
     <!-- Template CSS -->
     <link rel="stylesheet" href="/assets/css/style-starter.css">
+
+    @yield('custom_css')
     <!-- Template CSS -->
     <link href="//fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,600&display=swap"
           rel="stylesheet">

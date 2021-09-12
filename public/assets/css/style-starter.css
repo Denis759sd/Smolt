@@ -14147,6 +14147,13 @@ ul {
   }
 }
 
+@media(max-width: 576px) {
+    iframe {
+        widht: 426px;
+        height: 240px;
+    }
+}
+
 /*-- //container --*/
 
 :root {

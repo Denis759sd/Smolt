@@ -2,6 +2,10 @@
 
 @section('title', $film->title)
 
+@section('custom_css')
+
+@endsection
+
 @section('custom_js')
     <script src="https://playerjs.com/builder/player=9nsff68gjhaj" type="text/javascript"></script>
 @endsection
@@ -24,8 +28,9 @@
                         </div>
                     </div>
 
-                    <div class="box-content">
-                        <h3 class="title">{{$film->title}}</h3>
+                    <div>
+                        <h2 class="title" style="color: #fff; ">{{$film->title}}</h2>
+                        <h4 class="description" style="margin-top: 8rem;">{{$film->description}}</h4>
                     </div>
                 </div>
             </div>

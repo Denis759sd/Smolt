@@ -17,7 +17,7 @@
                     <div class="item vhny-grid">
                         <div class="box16">
                             <figure>
-                                <img class="img-fluid" src="{{$film->image}}" alt="">
+                                <img class="img-fluid" src="/{{$film->image}}" alt="">
                             </figure>
                         </div>
                     </div>

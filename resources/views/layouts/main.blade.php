@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Smolt - @yield('title')</title>
+    <link rel="icon" href="/assets/icons/icon.svg" type="image/x-icon">
     <!-- Template CSS -->
     <link rel="stylesheet" href="/assets/css/style-starter.css">
 
@@ -84,30 +85,10 @@
                             <form action="#" method="post" class="search-box">
                                 <input type="search" placeholder="Search your Keyword" name="search"
                                        required="required" autofocus="">
-                                <button type="submit" class="btn"><span class="fa fa-search"
-                                                                        aria-hidden="true"></span></button>
+                                <button type="submit" class="btn">
+                                    <span class="fa fa-search" aria-hidden="true"></span>
+                                </button>
                             </form>
-                            <div class="browse-items">
-                                <h3 class="hny-title two mt-md-5 mt-4">Browse all:</h3>
-                                <ul class="search-items">
-                                    <li><a href="genre.html">Action</a></li>
-                                    <li><a href="genre.html">Drama</a></li>
-                                    <li><a href="genre.html">Family</a></li>
-                                    <li><a href="genre.html">Thriller</a></li>
-                                    <li><a href="genre.html">Commedy</a></li>
-                                    <li><a href="genre.html">Romantic</a></li>
-                                    <li><a href="genre.html">Tv-Series</a></li>
-                                    <li><a href="genre.html">Horror</a></li>
-                                    <li><a href="genre.html">Action</a></li>
-                                    <li><a href="genre.html">Drama</a></li>
-                                    <li><a href="genre.html">Family</a></li>
-                                    <li><a href="genre.html">Thriller</a></li>
-                                    <li><a href="genre.html">Commedy</a></li>
-                                    <li><a href="genre.html">Romantic</a></li>
-                                    <li><a href="genre.html">Tv-Series</a></li>
-                                    <li><a href="genre.html">Horror</a></li>
-                                </ul>
-                            </div>
                         </div>
                         <a class="close" href="#close">×</a>
                     </div>

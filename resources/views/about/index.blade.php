@@ -106,7 +106,7 @@
                                     <span class="fa fa-play video-icon" aria-hidden="true"></span>
                                 </a>
                             </div>
-                            <h3> <a class="title-gd" href="genre.html">{{$film->title}}</a></h3>
+                            <h3> <a class="title-gd" href="{{route("showFilm", $film->id)}}">{{$film->title}}</a></h3>
                             <p>{!! $film->description !!}</p>
                             <div class="button-center text-center mt-4">
                                 <a href="{{route('showFilm', [$film->id])}}" class="btn watch-button">Watch now</a>

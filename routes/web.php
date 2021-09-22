@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'App\Http\Controllers\HomeController@index')->name('home');
 
+Route::get('/search', 'App\Http\Controllers\HomeController@search')->name('search');
+
 Route::get('/about', 'App\Http\Controllers\AboutController@index')->name('about');
 
 Route::get('/genre', 'App\Http\Controllers\GenreController@index')->name('genre');

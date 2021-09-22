@@ -82,7 +82,7 @@
                     <!-- search popup -->
                     <div id="search" class="pop-overlay">
                         <div class="popup">
-                            <form action="#" method="post" class="search-box">
+                            <form action="{{ route('search') }}" method="get" class="search-box">
                                 <input type="search" placeholder="Search your Keyword" name="search"
                                        required="required" autofocus="">
                                 <button type="submit" class="btn">

@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Film extends Model
+class Category extends Model
 {
     use HasFactory;
 
@@ -15,14 +15,6 @@ class Film extends Model
      * @var string[]
      */
     protected $fillable = [
-        'title',
-        'description',
-        'duration',
-        'video_cdn',
-        'image'
+        'name'
     ];
-
-    public function categories() {
-        return $this->hasMany(Category::class)->orderBy('name', 'desc');
-    }
 }

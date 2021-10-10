@@ -31,6 +31,8 @@
     <noscript><div><img src="https://mc.yandex.ru/watch/85037503" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
 
+    welcomepartners
+
     @yield('custom_js')
 </head>
 

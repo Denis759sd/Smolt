@@ -83,6 +83,28 @@
                             </li>
                         </ul>
                     </li>
+
+                    <li class="nav-item menu">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon far fa-newspaper" aria-hidden="true"></i>
+                            <p>
+                                Categories
+                                <i class="right fas fa-angle-left"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="{{ route('category.index') }}" class="nav-link">
+                                    <p>All categories</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{route('category.create')}}" class="nav-link">
+                                    <p>Add new category</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
             <!-- /.sidebar-menu -->

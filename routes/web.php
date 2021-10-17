@@ -29,4 +29,5 @@ Route::middleware(['role:admin', 'auth'])->prefix('admin_panel')->group(function
     Route::get('/', [\App\Http\Controllers\Admin\HomeController::class, 'index'])->name('homeAdmin');
 
     Route::resource('film', \App\Http\Controllers\Admin\FilmController::class);
+    Route::resource('category', \App\Http\Controllers\Admin\CategoryController::class);
 });

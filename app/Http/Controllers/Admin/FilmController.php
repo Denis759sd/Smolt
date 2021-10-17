@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Category;
 use App\Models\Film;
 use Illuminate\Http\Request;
 
@@ -29,7 +30,11 @@ class FilmController extends Controller
      */
     public function create()
     {
-        return view('admin.film.create');
+        $categories = Category::all();
+
+        return view('admin.film.create', [
+            'categories' => $categories
+        ]);
     }
 
     /**
@@ -45,7 +50,8 @@ class FilmController extends Controller
             'description' => 'required|min:2',
             'duration' => 'required',
             'video_cdn' => 'required',
-            'image' => 'required'
+            'image' => 'required',
+            'category_id' => 'required'
         ]);
 
         Film::create($film);
@@ -72,8 +78,11 @@ class FilmController extends Controller
      */
     public function edit(Film $film)
     {
+        $categories = Category::all();
+
         return view('admin.film.edit', [
-           'film' => $film
+            'film' => $film,
+            'categories' => $categories
         ]);
     }
 
@@ -91,6 +100,7 @@ class FilmController extends Controller
         $film->duration = $request->duration;
         $film->video_cdn = $request->video_cdn;
         $film->image = $request->image;
+        $film->category_id = $request->category_id;
 
         $film->save();
 

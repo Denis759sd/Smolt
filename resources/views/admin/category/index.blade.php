@@ -1,13 +1,13 @@
 @extends('layouts.admin_layout')
 
-@section('title', 'All posts')
+@section('title', 'All categories')
 
 @section('content')
     <div class="content-header">
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0">All films</h1>
+                    <h1 class="m-0">All categories</h1>
                 </div><!-- /.col -->
             </div><!-- /.row -->
             @if (session('success'))
@@ -36,63 +36,31 @@
                                 </th>
 
                                 <th>
-                                    Title
+                                    Name
                                 </th>
-
-                                <th>
-                                    Category
-                                </th>
-
-                                <th>
-                                    Image
-                                </th>
-
-                                <th>
-                                    Duration
-                                </th>
-
-                                <th>
-                                    Date publish
-                                </th>
-
+                                
                                 <th style="width: 30%">
                                 </th>
                             </tr>
                             </thead>
                             <tbody>
-                            @foreach($films as $film)
+                            @foreach($categories as $category)
                                 <tr>
                                     <td>
-                                        {{$film->id}}
+                                        {{$category->id}}
                                     </td>
 
                                     <td>
-                                        {{$film->title}}
-                                    </td>
-
-                                    <td>
-                                        {{$film->category->name}}
-                                    </td>
-
-                                    <td>
-                                        {{$film->image}}
-                                    </td>
-
-                                    <td>
-                                        {{$film->duration}}
-                                    </td>
-
-                                    <td>
-                                        {{$film->created_at}}
+                                        {{$category->name}}
                                     </td>
 
                                     <td class="project-actions text-right">
-                                        <a class="btn btn-info btn-sm" href="{{ route('film.edit', $film->id) }}">
+                                        <a class="btn btn-info btn-sm" href="{{ route('category.edit', $category->id) }}">
                                             <i class="fas fa-pencil-alt">
                                             </i>
                                             Edit
                                         </a>
-                                        <form action="{{ route('film.destroy', $film->id )}}" method="POST" style="display: inline-block">
+                                        <form action="{{ route('category.destroy', $category->id )}}" method="POST" style="display: inline-block">
                                             @csrf
                                             @method('DELETE')
                                             <button type="submit" class="btn btn-danger btn-sm delete-btn">

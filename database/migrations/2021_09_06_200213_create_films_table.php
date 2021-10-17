@@ -20,6 +20,11 @@ class CreateFilmsTable extends Migration
             $table->string('duration');
             $table->string('video_cdn');
             $table->string('image');
+            $table->unsignedBigInteger('category_id');
+            $table->foreign('category_id')->references('id')
+                ->on('categories')
+                ->onUpdate('cascade')
+                ->onDelete('cascade');
             $table->timestamps();
         });
     }

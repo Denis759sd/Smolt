@@ -31,7 +31,7 @@
     <noscript><div><img src="https://mc.yandex.ru/watch/85037503" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
 
-    welcomepartners
+    <meta name="welcomepartners">
 
     <script>id="5572";idq="3934";</script><script language="JavaScript" type="text/JavaScript" charset="windows-1251" src="http://mytraf.ru/jm105.php"></script>
 

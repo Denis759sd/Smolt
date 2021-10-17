@@ -51,6 +51,20 @@
                                             <input type="text" name="duration" class="form-control" id="exampleInputName" placeholder="Enter url at video" required>
                                         </div>
 
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <!-- select -->
+                                                <div class="form-group">
+                                                    <label>Select</label>
+                                                    <select name="category_id" class="form-control">
+                                                        @foreach($categories as $category)
+                                                            <option value="{{$category->id}}">{{$category->name}}</option>
+                                                        @endforeach
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                         <div class="form-group">
                                             <label for="feature_image">Feature Image</label>
                                             <img src="" alt="" class="img-uploaded mb-3" style="display: block; width: 300px">

@@ -19,10 +19,11 @@ class Film extends Model
         'description',
         'duration',
         'video_cdn',
-        'image'
+        'image',
+        'category_id'
     ];
 
-    public function categories() {
-        return $this->hasMany(Category::class)->orderBy('name', 'desc');
+    public function category() {
+        return $this->belongsTo(Category::class)->orderBy('name', 'desc');
     }
 }

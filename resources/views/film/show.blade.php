@@ -41,6 +41,7 @@
         <div class="row featurette">
             <div class="col-md-7 order-md-2">
                 <h2 class="featurette-heading" style="margin-bottom: 2rem">{{$film->title}}</h2>
+                <h5 class="mb-3">Жанр: {{$film->category->name}}</h5>
                 <p class="lead">{!! $film->description !!}</p>
             </div>
             <div class="col-md-3 order-md-1">

@@ -7,7 +7,7 @@
         <div class="companies20-content">
             <div class="owl-one owl-carousel owl-theme">
                 <div class="item">
-                    <a href="http://surl.li/akfoy" >
+                    <a href="https://hg7socailgame.live/formreg-popup-standart/?segment=segment_casino&pokerdom=f2e7f9c7-7cfe-573f-fff7-017cc7d01ce7.6796&click_id=f2e7f9c7-7cfe-573f-fff7-017cc7d01ce7&source=6796&webmaster=12064&offer_id=8&country=by&city=min&subid2=&utm_source=gagarin&utm_medium=cpa&utm_campaign=12064" >
                         <img class="banner-view" src="files/banners/banner1.jpg" alt="Покер дом">
                     </a>
                 </div>

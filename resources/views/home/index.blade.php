@@ -3,7 +3,7 @@
 @section('title', 'Home')
 
 @section('content')
-    <section class="w3l-main-slider" id="home">
+{{--    <section class="w3l-main-slider mb-3" id="home">
         <div class="companies20-content">
             <div class="owl-one owl-carousel owl-theme">
                 <div class="item">
@@ -15,7 +15,7 @@
         </div>
     </section>
     <!-- //banner-slider-->
-    <!-- main-slider -->
+    <!-- main-slider -->--}}
 
     <!--grids-sec1-->
     <section class="w3l-grids">

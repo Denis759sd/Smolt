@@ -154,13 +154,11 @@
 
 
                             <div class="col-md-3 col-sm-6 sub-two-right mt-5">
-                                <h6>Movies</h6>
+                                <h6>Categories</h6>
                                 <ul>
-                                    <li><a href="#">Movies</a></li>
-                                    <li><a href="#">Videos</a></li>
-                                    <li><a href="#">English Movies</a></li>
-                                    <li><a href="#">Tailor</a></li>
-                                    <li><a href="#">Upcoming Movies</a></li>
+                                    @foreach($categories as $category)
+                                        <li><a href="#">{{$category->name}}</a></li>
+                                    @endforeach
                                 </ul>
                             </div>
                             <div class="col-md-3 col-sm-6 sub-two-right mt-5">
